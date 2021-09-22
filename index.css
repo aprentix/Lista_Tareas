@@ -3,9 +3,22 @@
     margin: 0;
 }
 
-.menu-icon{
-    background: lightcoral;
-    position: relative;
+.material-icons{
+    width:50px;
+    display: flex;
+    position:absolute;
+    margin-top: 8px;
+    margin-bottom: auto;
+    margin-left:10px;
+    visibility: hidden;
+}
+
+header h1{
+    width:auto;
+    display: flex;
+    margin-left: auto;
+    margin-right:auto;
+    position:static;
 }
 
 header{
@@ -18,19 +31,13 @@ header{
     position:sticky;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
+}
 
-}
-.material-icons{
-    width: 95%;
-    display: block;
-    text-align: left;
-    padding-left:5px;
-}
 section.lista_tareas{
     padding-top:50px;
     display: flex;
     justify-content: center;
-    
 }
 
 #insertar{
@@ -41,22 +48,46 @@ section.lista_tareas{
     justify-content: center;
 }
 section ul.tareas li{
-    width:100%;
+    display: flex;
+}
+section ul.tareas .nombre_tarea{
+    width:350px;
+    height: 20px;
+    font-size: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding:5px;
+    text-align: center;
     display: flex;
     justify-content: center;
     padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
+    padding-bottom: 10px;
     font-family: 'Dosis', sans-serif;
     font-size:20px;    
     color:white;
-    background: rgba(0, 255, 234, 0.575);
+    background: rgba(18, 166, 185, 0.788);
     margin-bottom: 10px;
 }
 
-section ul{
+.quitar{
+    width:15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 20px;
+    padding:15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+}
+
+
+
+section ul.tareas{
     width:400px;
-    padding:20px;
+    padding:5px;
+    padding-top:15px;
+    padding-bottom:15px;
+
     height: auto;
     color:black;
     background: rgb(0, 0, 0);
@@ -65,6 +96,8 @@ section ul{
     margin-left:auto;
     margin-right:auto;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.295) -10px 9px 17px;
+
 }
 
 
@@ -76,35 +109,32 @@ section ul{
     padding:15px;
 }
 
-.quitar{
-    width:15px;
-    height: 15px;
-    background: rgba(219, 23, 23, 0.815);
-    border-radius: 20px;
-    padding:15px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
+
 .menu-icon {
     width: 50px;
     height: 50px;
     color:white;
-    background: tomato;
 }
 
 body{
+    position: absolute;
+    top:0;
+    bottom: 0;
     width:100%;
+    background: #e6e3e0;
+    min-height: 100vh;
+
 }
 
 .tarea{
     width:350px;
     height: 20px;
-    font-size: 30px;
+    font-size: 10px;
     background: rgb(0, 0, 0);
     border-radius: 20px;
     padding:5px;
     color:rgb(255, 255, 255);
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
     outline:0;
     text-align: center;
 }
@@ -114,9 +144,10 @@ footer{
     width:100%;
     height:auto;
     background: black;
-    margin-top: 15%;
+    margin-top: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
+    bottom: 0;
 }
 
 footer .enlaces{
@@ -144,6 +175,13 @@ footer ul.enlaces li a{
     .tarea{
         width:65%;
         
+    }
+    section ul.tareas .nombre_tarea{
+        width:95%;
+    }
+    
+    .quitar{
+        width:5%;
     }
    
 }
