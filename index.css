@@ -3,16 +3,6 @@
     margin: 0;
 }
 
-.material-icons{
-    width:50px;
-    display: flex;
-    position:absolute;
-    margin-top: 8px;
-    margin-bottom: auto;
-    margin-left:10px;
-    visibility: hidden;
-}
-
 header h1{
     width:auto;
     display: flex;
@@ -68,16 +58,13 @@ section ul.tareas .nombre_tarea{
     background: rgba(18, 166, 185, 0.788);
     margin-bottom: 10px;
 }
-
 .quitar{
-    width:15px;
-    height: 15px;
-    background: rgba(255, 255, 255, 0.815);
-    border-radius: 20px;
-    padding:15px;
-    margin-right: 5px;
-    margin-left: 5px;
-    display: flex;
+    width:35px;
+    height: 35px;
+    margin-left: 2px;
+    color:white;
+    background:black;
+    border-radius: 50%;
 }
 
 
@@ -99,22 +86,34 @@ section ul.tareas{
     box-shadow: rgba(0, 0, 0, 0.295) -10px 9px 17px;
 
 }
+.delete_space{
+    display: block;
+    text-align: left;
+}
+.delete_all{
+    width:55px;
+    height: 55px;
+    margin-left: 2px;
+    color:white;
+    background:rgba(12, 226, 241, 0.5);
+    border-radius: 50%;
+}
 
 
 .agregar{
-    width:20px;
-    height: 20px;
-    background: rgba(0, 0, 0, 0.815);
-    border-radius: 20px;
-    padding:15px;
-}
-
-
-.menu-icon {
-    width: 50px;
-    height: 50px;
+    width:45px;
+    height: 45px;
+    margin-left: 2px;
     color:white;
+    background:black;
+    border-radius: 50%;
 }
+
+.rec_logo{
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 body{
     position: absolute;
@@ -164,6 +163,9 @@ footer ul.enlaces li a{
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
 }
+.icon_ex{
+    color:cornsilk;
+}
 
 
 
@@ -177,13 +179,18 @@ footer ul.enlaces li a{
         
     }
     section ul.tareas .nombre_tarea{
-        width:95%;
+        width:85%;
     }
     
-    .quitar{
-        width:5%;
-    }
+    
+    
    
+}
+
+@media (max-height: 480px){
+    footer{
+        position:relative;
+    }
 }
 /*
 font-family: 'Birthstone', cursive;
