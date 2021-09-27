@@ -25,7 +25,7 @@ header{
 }
 
 section.lista_tareas{
-    padding-top:50px;
+    padding-top:10px;
     display: flex;
     justify-content: center;
     margin:20px;
@@ -43,7 +43,7 @@ section ul.tareas li{
 }
 section ul.tareas .nombre_tarea{
     width:350px;
-    height: 20px;
+    height: auto;
     font-size: 25px;
     background: rgb(0, 0, 0);
     border-radius: 20px;
