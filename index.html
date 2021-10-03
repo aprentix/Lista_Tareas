@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,47 +16,32 @@
     <header>
         <h1>To do List</h1>
     </header>
-    <section class="lista_tareas">
-            <ul class="tareas">
-               
-               
-                <li>
-                    <div class="nombre_tarea">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui aspernatur distinctio aliquid ex!
-                    </div>
-                    <button class="quitar">
-                        <span class="material-icons">
-                            &#xe14c;
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <div class="nombre_tarea">
-                        Tarea uno
-                    </div>
-                    <button class="quitar">
-                        <span class="material-icons">
-                            &#xe14c;
-                        </span>
-                    </button>
-                </li>
-                <div class="delete_space">
-                    <button class="delete_all">
-                        <span class="material-icons">
-                            &#xe92e;
-                        </span>
-                    </button>
-                </div>
-            </ul>
-    </section>
-    <section id="insertar">
-        <input type="text" class="tarea" placeholder="Añadir a la lista">
-        <button class="agregar">
+    <section class="insertar" id="field_create_task">
+        <input type="text" class="tarea" id="tarea" placeholder="Añadir a la lista">
+        <button class="agregar" id="add_button">
             <span class="material-icons">
                 &#xe5c8;
             </span>
         </button>
     </section>
+    <section class="lista_tareas">
+            <ul class="tareas" id="list">
+                
+            </ul>
+            <div class="delete_space">
+                <button class="deleteXD" id="delete_all">
+                    <span class="material-icons">
+                        &#xe92e;
+                    </span>
+                </button>
+                <button class="modoXD" id="modoChange" onclick="cambio()">
+                    <span class="material-icons">
+                       o
+                    </span>
+                </button>
+            </div>
+    </section>
+
     <footer>
         <ul class="enlaces">
             <li><a href="#">Información</a></li>
@@ -75,6 +60,11 @@
                 </span>
             </span>
         </div>
+        
     </footer>
+
+  
+    
+    <script src="index.js"></script>
 </body>
 </html>

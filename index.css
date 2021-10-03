@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.dark{
+    background: rgb(32, 32, 32);
+}
+
 header h1{
     width:auto;
     display: flex;
@@ -26,12 +30,10 @@ header{
 
 section.lista_tareas{
     padding-top:10px;
-    display: flex;
-    justify-content: center;
-    margin:20px;
+    display: block;
 }
 
-#insertar{
+.insertar{
     position:relative;
     padding-top:20px;
     width:100%;
@@ -41,7 +43,7 @@ section.lista_tareas{
 section ul.tareas li{
     display: flex;
 }
-section ul.tareas .nombre_tarea{
+section ul.tareas .task_description{
     width:350px;
     height: auto;
     font-size: 25px;
@@ -68,38 +70,57 @@ section ul.tareas .nombre_tarea{
     border-radius: 50%;
 }
 
-
+.task{
+    justify-content: center;
+}
 
 section ul.tareas{
-    width:400px;
+    min-height: 200px;
+    max-height: auto;
+    width:85%;
     padding:5px;
     padding-top:15px;
     padding-bottom:15px;
-
+    position:relative;
     height: auto;
     color:black;
     background: rgb(0, 0, 0);
     display: block;
     justify-content: center;
-    margin-left:auto;
-    margin-right:auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.295) -10px 9px 17px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 1s;
+}
 
+section ul.tareas:hover{
+    background: rgba(6, 12, 12, 0.932);
+    transition-duration: 1s;
 }
+
 .delete_space{
+    margin-top: 15px;
     display: block;
-    text-align: left;
+    text-align: center;
 }
-.delete_all{
+.deleteXD{
     width:55px;
     height: 55px;
     margin-left: 2px;
     color:white;
-    background:rgba(12, 226, 241, 0.5);
+    background:rgba(10, 124, 133, 0.829);
     border-radius: 50%;
 }
 
+.modoXD{
+    width:55px;
+    height: 55px;
+    margin-left: 2px;
+    color:white;
+    background:rgba(0, 0, 0, 0.986);
+    border-radius: 50%;
+}
 
 .agregar{
     width:45px;
@@ -140,7 +161,7 @@ body{
 }
 
 footer{
-    position:absolute;
+    position:relative;
     width:100%;
     height:auto;
     background: black;
