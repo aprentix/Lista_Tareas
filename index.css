@@ -13,11 +13,15 @@ header h1{
     margin-left: auto;
     margin-right:auto;
     position:static;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 50px;
 }
 
 header{
     font-family: 'Carattere', cursive;
-    height: auto;
+    min-height: 100px;
+    max-height: auto;
     text-align:center;
     width:100%;
     color:white;
@@ -211,6 +215,8 @@ footer ul.enlaces li a{
     
    
 }
+
+
 
 @media (max-height: 480px){
     footer{

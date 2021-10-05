@@ -31,28 +31,30 @@ var agregarTask = function(){
         texto.setAttribute("class", "task_description");
         ///
         /// PARA CREAR EL BOTÓN DE BORRAR
-        var btnB = document.createElement("button");
-        btnB.setAttribute("class", "quitar");
-        var span = document.createElement("span");
-        span.innerHTML="X";
-        btnB.appendChild(span);
+        //var btnB = document.createElement("button");
+        //btnB.setAttribute("class", "quitar");
+        //var span = document.createElement("span");
+        //span.innerHTML="X";
+        //btnB.appendChild(span);
         ///
         //newTask.appendChild(btnE);
         newTask.appendChild(texto);
-        newTask.appendChild(btnB);
-        btnB.addEventListener("click", eliminarTask);
+        ///newTask.appendChild(btnB);
+        newTask.addEventListener("click", eliminarTask);
         list.appendChild(newTask);
     }
+    tarea.value="";
 }
 
 var eliminarTask = function(){
-    this.parentNode.parentNode.removeChild(this.parentNode);
+    this.parentNode.removeChild(this);
 }
 
 var eraseAll = function(){
-    ///alert(list.firstChild);
-    while(list.firstChild){
-        list.removeChild(list.firstChild);
+    if(confirm("Do you want to erase all? :)")){
+        while(list.firstChild){
+            list.removeChild(list.firstChild);
+        }
     }
 }
 
