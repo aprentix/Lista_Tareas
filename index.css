@@ -151,7 +151,7 @@ body{
 
 }
 
-.tarea{
+.tareaC{
     width:350px;
     height: 30px;
     font-size: 25px;
@@ -161,6 +161,20 @@ body{
     color:rgb(255, 255, 255);
     font-family: 'Dosis', sans-serif;
     outline:0;
+    text-align: center;
+}
+
+.tareaCuidado{
+    width:350px;
+    height: 30px;
+    font-size: 25px;
+    border:rgba(238, 0, 0, 0.452) solid 2px;
+    background: rgba(247, 15, 15, 0.795);
+    border-radius: 20px;
+    padding:5px;
+    color:rgb(255, 255, 255);
+    font-family: 'Dosis', sans-serif;
+    outline: red solid 2px;
     text-align: center;
 }
 
@@ -193,7 +207,7 @@ footer ul.enlaces li a{
     color:cornsilk;
 }
 
-.tarea::placeholder{
+.tareaC::placeholder{
     color:rgba(255, 255, 255, 0.658);
     font-size: 25px;
 }
@@ -203,7 +217,7 @@ footer ul.enlaces li a{
         width:70%;
         
     }
-    .tarea{
+    .tareaC{
         width:65%;
         
     }

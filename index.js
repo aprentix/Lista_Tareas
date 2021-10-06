@@ -14,6 +14,15 @@ function cambio(){
     ele.classList.toggle("dark");
 }
 
+function controlaLong(){
+    var inpb = tarea.value;
+    if(inpb.length>=25){
+        tarea.setAttribute("class", "tareaCuidado");
+    }
+    else{
+        tarea.setAttribute("class", "tareaC");
+    }
+}
 
 var agregarTask = function(){
     var input = tarea.value;
@@ -43,6 +52,7 @@ var agregarTask = function(){
         newTask.addEventListener("click", eliminarTask);
         list.appendChild(newTask);
     }
+    tarea.setAttribute("class", "tareaC");
     tarea.value="";
 }
 
