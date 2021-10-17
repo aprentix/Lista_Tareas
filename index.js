@@ -24,31 +24,33 @@ function controlaLong(){
     }
 }
 
+
+const API_ANIME = "https://ghibliapi.herokuapp.com/films"
+
+fetch(`${API_ANIME}`)
+    .then((response) => response.json())
+    .then((films)=>{
+        films.forEach((film)=>{
+            var newTask = document.createElement('li');
+            newTask.setAttribute('class', 'task');
+            var texto = document.createElement('div');
+            texto.innerHTML = `Película: ${film.title} ***** Titulo Japonés: ${film.original_title}`;
+            texto.setAttribute("class", "task_description");
+            newTask.appendChild(texto);
+            newTask.addEventListener("click", eliminarTask);
+            list.appendChild(newTask);
+        });
+    });
+
 var agregarTask = function(){
     var input = tarea.value;
     if(input!=""){
-        ///
         var newTask = document.createElement("li");
         newTask.setAttribute("class", "task");
-        
-        //var btnE = document.createElement("input");
-        //btnE.setAttribute("type", "checkbox");
-        //btnE.setAttribute("class", "done");
-        
         var texto = document.createElement("div");
         texto.innerHTML=input;
         texto.setAttribute("class", "task_description");
-        ///
-        /// PARA CREAR EL BOTÓN DE BORRAR
-        //var btnB = document.createElement("button");
-        //btnB.setAttribute("class", "quitar");
-        //var span = document.createElement("span");
-        //span.innerHTML="X";
-        //btnB.appendChild(span);
-        ///
-        //newTask.appendChild(btnE);
         newTask.appendChild(texto);
-        ///newTask.appendChild(btnB);
         newTask.addEventListener("click", eliminarTask);
         list.appendChild(newTask);
     }

@@ -238,6 +238,7 @@ footer ul.enlaces li a{
 @media (max-height: 480px){
     footer{
         position:relative;
+        margin:0;
     }
 }
 /*
